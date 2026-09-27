@@ -203,7 +203,7 @@ describe("paginate", () => {
 		const fetcher = makeFetcher();
 		restore = installMock(async () => mockResponse(500, "Internal Server Error"));
 
-		expect(
+		await expect(
 			paginate({
 				fetcher,
 				buildUrl: (page) => `https://api.example.com/items?page=${page}`,
