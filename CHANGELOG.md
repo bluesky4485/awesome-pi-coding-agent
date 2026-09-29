@@ -7,6 +7,84 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-29
+
+### Added
+
+- add astro website
+- add Brave Web Search discovery source (#47)
+- **site**: add global shareable search URL (?q= parameter) (#65)
+- add Hacker News source via Algolia API (#44)
+- add luw2007/pi-grill to the directory (#253)
+- add search to categories
+- add semantic release flow (#17)
+- **list**: add zgs225/pi2.nvim (Neovim frontend for pi) (#248)
+- full rewrite of pipeline and storage (#30)
+- improve early reject logic
+- refresh existing entry metadata on same-source duplicates (#80)
+- replace Bun with PNPM
+- replace Bun with PNPM
+- **astro**: revamp landing, add stars and Pi logo
+- **site**: use query params for shareable category search links (#32)
+
+### Changed
+
+- add workaround to shorten title for mobile view (#21)
+- **deps-dev**: bump @alexanderfortin/semantic-release-keep-a-changelog (#41)
+- **deps**: bump astro
+- consolidate source custom logic into sources
+- remove health metadata system (#109)
+- **deps-site**: Update dependency @astrojs/mdx to ^6.0.3 (#327)
+- **deps-site**: Update dependency @astrojs/mdx to v8 (#331)
+- **deps-dev**: update dependency @types/node to ^25.9.8 (#328)
+- **deps-dev**: update dependency vitest to ^4.1.11 (#329)
+- **deps-dev**: update dependency vitest to v5 (#332)
+- **deps-ci**: update pnpm to v12.6.0 (#330)
+- update tagline
+- updates
+
+### Fixed
+
+- add astro build tests
+- add auto blacklist into filter, add dedup to pipeline
+- add filter for non-English entries
+- add more filtering for non-English entries
+- add more gates for yt videos
+- add normalization for https://youtu.be/ID urls
+- add NPM_TOKEN to avoid throttling
+- add url normalization to avoid mismatch when blacklisting
+- blacklist 442 irrelevant entries from data/ (#12)
+- clarify how project works
+- cleanp hero
+- code cleanups #2
+- decode HTML entities in video titles and fix site title (#4)
+- ensure invalid json do not break build
+- ensure timestamp match across renders
+- ensure website is in sync with readme
+- filter out oh-my-pi related projects
+- improve blacklisting rules
+- improve discovery logic
+- improve false positive filtering
+- improve filter logic
+- improve filtering to also blacklist unrelated @types
+- include YT title when filtering
+- **dedup**: keep same-source entries distinct when they share a repository (#307)
+- keep validation prompt under action limits (#124)
+- migrate biome config to 2.5.0 and add SVG titles for a11y (#137)
+- **list**: move pi2.nvim entry from misc to extensions category (#258)
+- preserve higher-priority source metadata (#127)
+- recalculate video health with available signals (#14)
+- reclassify misc entries as extensions and blacklist irrelevant ones (#52)
+- relax filter to allow valid data points
+- remove NPM_TOKEN which appears to be useless, add backoff
+- remove skills category
+- replace @types/bun with pinned bun-types to fix typecheck (#6)
+- resolve Astro site build failure when root node_modules is absent (#131)
+- store last update timestamp for consistency between readme and site
+- strip HTML tags and decode entities in descriptions and titles (#54)
+- use proper pagination for discover fetches
+- use same load logic for readme and astro
+
 ## [2.10.0] - 2026-09-25
 
 ### Added
